@@ -1,0 +1,14 @@
+{
+  "name": "charts",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "chart.js": "^2.1.4",
+    "meteor-node-stubs": "~0.2.0",
+    "momentjs": "^1.1.7",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
