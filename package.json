@@ -9,6 +9,8 @@
     "meteor-node-stubs": "~0.2.0",
     "momentjs": "^1.1.7",
     "react": "^15.1.0",
+    "react-chartjs": "^0.7.3",
+    "react-chartjs2": "^0.2.1",
     "react-dom": "^15.1.0"
   }
 }

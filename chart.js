@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Chart from './components/chart.js'
-
-class App extends Components {
-	constructor(props) {
-		super(props);
-
-		this.state = { chart: {
-			type: 'line',
+		var charty = document.getElementById('charty').getContext('2d');
+		// draw lines of chart
+		var myChart = new Chart(charty, {
+			type: 'polarArea',
 			data: {
 				// y-axis
 				labels: ["2010", "2011", "2012", "2013"],
@@ -29,20 +23,4 @@ class App extends Components {
 	                ]
 				}]
 			}
-		}};
-	};
-
-	render() {
-		return(
-			<div>
-				<canvas width="400" height="400">
-				<Chart chart={this.state.chart} />
-				</canvas>
-			</div>
-		);
-	}
-};
-
-Meteor.startup(() => {
-	ReactDOM.render(<App />, document.querySelector('.container'));
-});
+		})
